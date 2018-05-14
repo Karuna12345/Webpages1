@@ -1,0 +1,527 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>https://www.els.edu/en/landingpage/gaes1</title>
+		<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="bootstrap.css">
+		<script src="jquery.js"></script>
+		<script src="bootstrap.js"></script>
+		<link rel="stylesheet" type="text/css" href="20.css">
+	</head>
+	<script>
+		function resizeHeaderOnScroll() 
+		{
+			const distanceY = window.pageYOffset || document.documentElement.scrollTop,
+			shrinkOn = 200,
+			headerEl = document.getElementById('header2'); 
+			if (distanceY > shrinkOn) 
+			{
+				headerEl.classList.add("smaller");
+			} 
+			else 
+			{
+			    headerEl.classList.remove("smaller");
+			 }
+		}
+		window.addEventListener('scroll', resizeHeaderOnScroll);
+		function validateForm()
+		{
+	    	var x = document.forms["myForm"]["fname"].value;
+		    if (x == "") 
+		    {
+		   	     alert("Name must be filled out");
+		        return false;
+		    }
+		    var y = document.forms["myForm"]["lname"].value;
+		    if (y == "") 
+		    {
+		   	     alert("Name must be filled out");
+		        return false;
+		    }
+		}
+	</script>
+	<body>
+		<header id="header2">
+			<a id="logo" href="http://www.google.co.in" title="ELS Educational Services, inc,"><img id="img" src="els-logo.png" width="120" alt="educational services"></a>
+			<div class="header1">
+				 <div class="dropdown" id="select_lang">
+					<button class="btn dropdown-toggle" type="button" id="menu1" data-toggle="dropdown" >Select a language
+					<span style="color: black;" class="caret" ></span></button>
+					<ul class="dropdown-menu lang" role="menu" aria-labelledby="menu1">
+						<li role="presentation"><a role="menuitem" href="#"></a></li>
+						<li role="presentation"><a role="menuitem" href="#">العربية</a></li>
+						<li role="presentation"><a role="menuitem" href="#">中文(中华人民共和国)</a></li>
+						<li role="presentation"><a role="menuitem" href="#">中文(台灣)</a></li>
+						<li role="presentation"><a role="menuitem" href="#">English (United <br>Kingdom)</a></li>
+						<li role="presentation"><a role="menuitem" href="#">français</a></li>
+						<li role="presentation"><a role="menuitem" href="#">Deutsch</a></li>
+						<li role="presentation"><a role="menuitem" href="#">日本語</a></li>
+						<li role="presentation"><a role="menuitem" href="#">한국어</a></li>
+						<li role="presentation"><a role="menuitem" href="#">português</a></li>
+						<li role="presentation"><a role="menuitem" href="#">русский</a></li>
+						<li role="presentation"><a role="menuitem" href="#">español</a></li>
+						<li role="presentation"><a role="menuitem" href="#">ไทย</a></li>
+						<li role="presentation"><a role="menuitem" href="#">Türkçe</a></li>
+						<li role="presentation"><a role="menuitem" href="#">Tiếng Việt</a></li>
+						<li role="presentation"><a role="menuitem" href="#">English</a></li>
+					</ul>
+				</div>
+			</div>
+		</header>
+		<div class="image">
+			<div class="sub_image">
+				<p>Study English. Explore. <br>Succeed.</p>
+			</div>
+		</div>
+		<div id="pnone">
+			<p>Study English. Explore. Succeed.</p>
+		</div>
+		<br><br>
+		<hr id="hrnone">
+			<div class="left_part">
+				<h1>Contact ELS!</h1><br><br>
+				<form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+				<label><span>*</span> First Name</label><br>
+				<input class="input" type="text" value="" name="fname"><br><br>
+				<label><span>*</span> Last Name/ Family Name</label><br>
+				<input class="input" type="text" value="" name="lname"><br><br>
+				<label><span>*</span> Gender</label><br>
+				<input type="radio" value="Gender" ><span style="color: #666;"> Male</span><br>
+				<input type="radio" value="Gender" ><span style="color: #666;">Female</span><br><br>
+				<label><span>*</span> Email</label><br>
+				<input class="input" type="email" value="" name="email"><br><br>
+				<label><span>*</span> Phone Number/ Mobile Number</label><br>
+				<input class="input" type="text" value="" name="number"><br><br>
+				<label><span>*</span>Country of residence</label><br>
+					<select>
+						<option>&nbsp;</option>
+						<option value="AA">Aruba</option>
+						<option value="AC">Antigua and Barbuda</option>
+						<option value="AE">United Arab Emirates</option>
+						<option value="AF">Afghanistan</option>
+						<option value="AG">Algeria</option>
+						<option value="AJ">Azerbaijan</option>
+						<option value="AL">Albania</option>
+						<option value="AM">Armenia</option>
+						<option value="AN">Andorra</option>
+						<option value="AO">Angola</option>
+						<option value="AR">Argentina</option>
+						<option value="AS">Australia</option>
+						<option value="AT">Ashmore And Cartier Is</option>
+						<option value="AU">Austria</option>
+						<option value="AUS">Australia</option>
+						<option value="AV">Anguilla</option>
+						<option value="BA">Bahrain</option>
+						<option value="BB">Barbados</option>
+						<option value="BC">Botswana</option>
+						<option value="BD">Bermuda</option>
+						<option value="BE">Belgium</option>
+						<option value="BF">Bahamas The</option>
+						<option value="BG">Bangladesh</option>
+						<option value="BH">Belize</option>
+						<option value="BK">Bosnia and Herzegovina</option>
+						<option value="BL">Bolivia</option>
+						<option value="BM">Burma</option>
+						<option value="BN">Benin</option>
+						<option value="BO">Belarus</option>
+						<option value="BP">Solomon Islands</option>
+						<option value="BR">Brazil</option>
+						<option value="BS">Bassas Da India</option>
+						<option value="BT">Bhutan</option>
+						<option value="BU">Bulgaria</option>
+						<option value="BV">Bouvet Island</option>
+						<option value="BX">Brunei</option>
+						<option value="BY">Burundi</option>
+						<option value="CA">Canada</option>
+						<option value="CB">Cambodia</option>
+						<option value="CD">Chad</option>
+						<option value="CE">Sri Lanka</option>
+						<option value="CF">Congo</option>
+						<option value="CG">Congo Dem Rep Of The</option>
+						<option value="CH">China</option>
+						<option value="CI">Chile</option>
+						<option value="CJ">Cayman Islands</option>
+						<option value="CK">Cocos (Keeling) Islands</option>
+						<option value="CM">Cameroon</option>
+						<option value="CN">Comoros</option>
+						<option value="CO">Colombia</option>
+						<option value="CR">Coral Sea Islands</option>
+						<option value="CS">Costa Rica</option>
+						<option value="CT">Central African Republic</option>
+						<option value="CU">Cuba</option>
+						<option value="CV">Cape Verde</option>
+						<option value="CW">Cook Islands</option>
+						<option value="CY">Cyprus</option>
+						<option value="DA">Denmark</option>
+						<option value="DJ">Djibouti</option>
+						<option value="DO">Dominica</option>
+						<option value="DR">Dominican Republic</option>
+						<option value="EC">Ecuador</option>
+						<option value="EG">Egypt</option>
+						<option value="EI">Ireland</option>
+						<option value="EK">Equatorial Guinea</option>
+						<option value="EN">Estonia</option>
+						<option value="ER">Eritrea</option>
+						<option value="ES">El Salvador</option>
+						<option value="ET">Ethiopia</option>
+						<option value="EU">Europa Island</option>
+						<option value="EZ">Czech Republic</option>
+						<option value="FG">French Guiana</option>
+						<option value="FI">Finland</option>
+						<option value="FJ">Fiji</option>
+						<option value="FK">Falkland Isl (Malvinas)</option>
+						<option value="FM">Micronesia Fed States Of</option>
+						<option value="FO">Faroe Islands</option>
+						<option value="FP">French Polynesia</option>
+						<option value="FR">France</option>
+						<option value="FS">French S And Ant Lands</option>
+						<option value="GA">Gambia The</option>
+						<option value="GB">Gabon</option>
+						<option value="GG">Georgia</option>
+						<option value="GH">Ghana</option>
+						<option value="GI">Gibraltar</option>
+						<option value="GJ">Grenada</option>
+						<option value="GK">Guernsey</option>
+						<option value="GL">Greenland</option>
+						<option value="GM">Germany</option>
+						<option value="GO">Glorioso Islands</option>
+						<option value="GP">Guadeloupe</option>
+						<option value="GR">Greece</option>
+						<option value="GT">Guatemala</option>
+						<option value="GV">Guinea</option>
+						<option value="GY">Guyana</option>
+						<option value="GZ">Gaza Strip</option>
+						<option value="HA">Haiti</option>
+						<option value="HK">Hong Kong</option>
+						<option value="HM">Heard Is &amp; Mcdonald Slands</option>
+						<option value="HO">Honduras</option>
+						<option value="HR">Croatia</option>
+						<option value="HU">Hungary</option>
+						<option value="IC">Iceland</option>
+						<option value="ID">Indonesia</option>
+						<option value="IM">Isle Of Man</option>
+						<option value="IN">India</option>
+						<option value="IO">British Indian Ocean Ter</option>
+						<option value="IP">Clipperton Island</option>
+						<option value="IR">Iran</option>
+						<option value="IS">Israel</option>
+						<option value="IT">Italy</option>
+						<option value="IV">Cote D Ivoire</option>
+						<option value="IZ">Iraq</option>
+						<option value="JA">Japan</option>
+						<option value="JE">Jersey</option>
+						<option value="JM">Jamaica</option>
+						<option value="JN">Jan Mayen</option>
+						<option value="JO">Jordan</option>
+						<option value="JU">Juan De Nova Island</option>
+						<option value="KE">Kenya</option>
+						<option value="KG">Kyrgyzstan</option>
+						<option value="KN">North Korea</option>
+						<option value="KR">Kiribati</option>
+						<option value="KS">South Korea</option>
+						<option value="KT">Christmas Island</option>
+						<option value="KU">Kuwait</option>
+						<option value="KV">Kosovo</option>
+						<option value="KZ">Kazakhstan</option>
+						<option value="LA">Laos</option>
+						<option value="LE">Lebanon</option>
+						<option value="LG">Latvia</option>
+						<option value="LH">Lithuania</option>
+						<option value="LI">Liberia</option>
+						<option value="LO">Slovakia</option>
+						<option value="LS">Liechtenstein</option>
+						<option value="LT">Lesotho</option>
+						<option value="LU">Luxembourg</option>
+						<option value="LY">Libya</option>
+						<option value="MA">Madagascar</option>
+						<option value="MB">Martinique</option>
+						<option value="MC">Macau</option>
+						<option value="MD">Moldova</option>
+						<option value="MF">Mayotte</option>
+						<option value="MG">Mongolia</option>
+						<option value="MH">Montserrat</option>
+						<option value="MI">Malawi</option>
+						<option value="MK">Macedonia</option>
+						<option value="ML">Mali</option>
+						<option value="MN">Monaco</option>
+						<option value="MO">Morocco</option>
+						<option value="MP">Mauritius</option>
+						<option value="MR">Mauritania</option>
+						<option value="MT">Malta</option>
+						<option value="MU">Oman</option>
+						<option value="MV">Maldives</option>
+						<option value="MW">Montenegro</option>
+						<option value="MX">Mexico</option>
+						<option value="MY">Malaysia</option>
+						<option value="MZ">Mozambique</option>
+						<option value="NC">New Caledonia</option>
+						<option value="NE">Niue</option>
+						<option value="NF">Norfolk Island</option>
+						<option value="NG">Niger</option>
+						<option value="NH">Vanuatu</option>
+						<option value="NI">Nigeria</option>
+						<option value="NL">Netherlands</option>
+						<option value="NO">Norway</option>
+						<option value="NP">Nepal</option>
+						<option value="NR">Nauru</option>
+						<option value="NS">Suriname</option>
+						<option value="NU">Nicaragua</option>
+						<option value="NZ">New Zealand</option>
+						<option value="PA">Paraguay</option>
+						<option value="PC">Pitcairn Islands</option>
+						<option value="PE">Peru</option>
+						<option value="PF">Paracel Islands</option>
+						<option value="PG">Spratly Islands</option>
+						<option value="PK">Pakistan</option>
+						<option value="PL">Poland</option>
+						<option value="PM">Panama</option>
+						<option value="PO">Portugal</option>
+						<option value="PP">Papua New Guinea</option>
+						<option value="PS">Palau</option>
+						<option value="PU">Guinea-Bissau</option>
+						<option value="QA">Qatar</option>
+						<option value="RE">Reunion</option>
+						<option value="RM">Marshall Islands</option>
+						<option value="RN">Saint Martin</option>
+						<option value="RO">Romania</option>
+						<option value="RP">Philippines</option>
+						<option value="RQ">Puerto Rico</option>
+						<option value="RS">Russia</option>
+						<option value="RW">Rwanda</option>
+						<option value="SA">Saudi Arabia</option>
+						<option value="SB">Saint Pierre And Miquelon</option>
+						<option value="SC">Saint Kitts And Nevis</option>
+						<option value="SE">Seychelles</option>
+						<option value="SF">South Africa</option>
+						<option value="SG">Senegal</option>
+						<option value="SH">Saint Helena</option>
+						<option value="SI">Slovenia</option>
+						<option value="SL">Sierra Leone</option>
+						<option value="SM">San Marino</option>
+						<option value="SN">Singapore</option>
+						<option value="SO">Somalia</option>
+						<option value="SP">Spain</option>
+						<option value="SR">Serbia</option>
+						<option value="ST">Saint Lucia</option>
+						<option value="SU">Sudan</option>
+						<option value="SV">Svalbard</option>
+						<option value="SW">Sweden</option>
+						<option value="SX">S Georgia &amp; S Sandwich</option>
+						<option value="SY">Syria</option>
+						<option value="SZ">Switzerland</option>
+						<option value="TB">Saint Barthelemy</option>
+						<option value="TD">Trinidad and Tobago</option>
+						<option value="TE">Tromelin Island</option>
+						<option value="TH">Thailand</option>
+						<option value="TI">Tajikistan</option>
+						<option value="TK">Turks and Caicos Islands</option>
+						<option value="TL">Tokelau</option>
+						<option value="TN">Tonga</option>
+						<option value="TO">Togo</option>
+						<option value="TP">Sao Tome and Principe</option>
+						<option value="TS">Tunisia</option>
+						<option value="TT">Timor-Leste</option>
+						<option value="TU">Turkey</option>
+						<option value="TV">Tuvalu</option>
+						<option value="TW">Taiwan</option>
+						<option value="TX">Turkmenistan</option>
+						<option value="TZ">Tanzania</option>
+						<option value="U2">Neutral Zone</option>
+						<option value="U3">Stateless</option>
+						<option value="UG">Uganda</option>
+						<option value="UK">United Kingdom</option>
+						<option value="UP">Ukraine</option>
+						<option value="US">United States</option>
+						<option value="UV">Burkina Faso</option>
+						<option value="UY">Uruguay</option>
+						<option value="UZ">Uzbekistan</option>
+						<option value="VC">S Vincent &amp; The Grenadines</option>
+						<option value="VE">Venezuela</option>
+						<option value="VI">British Virgin Islands</option>
+						<option value="VM">Vietnam</option>
+						<option value="VT">Vatican City</option>
+						<option value="WA">Namibia</option>
+						<option value="WE">West Bank</option>
+						<option value="WF">Wallis And Futuna</option>
+						<option value="WI">Western Sahara</option>
+						<option value="WS">Samoa</option>
+						<option value="WZ">Swaziland</option>
+						<option value="YM">Yemen</option>
+						<option value="ZA">Zambia</option>
+						<option value="ZI">Zimbabwe</option>
+					</select>
+				<br><br>
+				<label><span>*</span> Year Born</label><br>
+				<input class="input" type="text" name="year">
+				<br><br>
+				<label><span>*</span>What do you need help with?</label><br>
+					<select>
+						<option> &nbsp;</option>
+						<option value="General English Program">General English Programs</option>
+						<option value="EAP">Academic English Programs</option>
+						<option value="University Admissions">University Admissions</option>
+						<option value="Business Communications Programs">Business Communication Programs</option>
+						<option value="Youth Programs">Youth Programs</option>
+						<option value="How to Apply">How to Apply</option>
+						<option value="Prices and Quotes">Prices and Quotes</option>
+						<option value="Admissions">Admissions</option>
+						<option value="Housing">Housing</option>
+						<option value="Visas">Visas</option>
+						<option value="iELTS">iELTS</option>
+						<option value="ToEFL">ToEFL</option>
+						<option value="New Agent">New Agent</option>
+						<option value="Jobs">Jobs</option>
+						<option value="Other">Other</option>
+					</select>
+				<br><br>
+				<label><span>*</span> Where would you like to study?</label><br>
+					<select>
+						<option>&nbsp;</option>
+						<option>Australia</option>
+						<option>Canada</option>
+						<option>India</option>
+						<option>United States</option>
+					</select>
+				<br><br><br>
+				<div  class="check">
+				<input type="checkbox">&nbsp;&nbsp;I agree to the<a href="https://www.els.edu/TermsOfUse">Terms of Use</a> and <a href="https://www.els.edu/PrivacyPolicy">Privacy Policy</a>
+				</div>
+				<br><br>
+				<center>
+					<button><b>SUBMIT</b></button>
+				</center>
+				</form>
+				<hr id="hrnone1">
+
+			</div>
+			<hr id="hr1">
+			<div class="first">
+				<h3 style="font-size:24px;">Studying English with ELS will allow you to visit many exciting global destinatio</h3>
+				<p>The ability to communicate effectively in English is critical to making the most of the educational and job opportunities that await you. </p>
+				<p>Since 1961 ELS has been the leading provider of English programs on university campuses and in exciting city centers in the U.S.A. Our English for Academic Purposes program is now available at ELS Centers in Australia, Canada, India, Japan, Korea, Kuwait, France, Malaysia, Panama, Saudi Arabia and the United Arab Emirates, as well at more than sixty locations in the U.S.A. </p>
+				<p>ELS offers you a variety of programs to help you acquire the English skills so key to academic and career success today – experiences filled with discovery and adventure, new friends and new cultures, learning and achievement.</p>
+				<br>
+				<h3 style="font-size:24px;">ENGLISH FOR ACADEMIC PURPOSES</h3>
+				<p>For students seeking admission to a college or university, successfully completing Level 109 or 112 of the English for Academic Purposes (EAP) program earns you an official certificate recognized by more than 650 colleges and universities, confirming that you have achieved the English language proficiency required for admission.</p>
+				<p>In addition to focusing on listening, speaking, reading, writing, pronunciation and grammar skills, the ELS English for Academic Purposes curriculum also develops skills in: </p>
+					<ul>
+						<li>Critical Thinking </li>
+						<li>Presentations </li>
+						<li>Note Taking </li>
+						<li>Academic Research</li>
+						<li>and more… </li>
+					</ul>
+				<p>Morning classes consist of:</p>
+					<ul>
+						<li>Structure and Speaking Practice or Language Studies </li>
+						<li>Vocabulary Enrichment (Levels 101 – 109) or Skills Enhancement Classes (Masters only)</li>
+						<li>One lesson in our Language Technology Center (LTC) </li>
+					</ul>
+				<p></p>
+				<p></p>
+				<h3 id ="h3" style="font-size:24px;"> GENERAL ENGLISH</h3>
+				<p>For anyone seeking to improve the English skills they need to communicate accurately and effectively. </p>
+				<p>The program includes intensive development of skills in:</p>
+					<ul>
+						<li>Listening</li>
+						<li>Pronunciation</li>
+						<li>Grammar</li>
+						<li>Speaking </li>
+						<li>Vocabulary</li>
+					</ul>
+				<p>Morning classes consist of:</p>
+					<ul>
+						<li>Structure and Speaking Practice or Language Studies</li>
+						<li>Vocabulary Enrichment</li>
+						<li>Skills Enhancement Class in the morning in place of Vocabulary Enrichment (Masters levels) </li>
+						<li>One lesson in our Language Technology Center</li>
+					</ul>
+				<p>Afternoons at all levels are dedicated to Skills Enhancement Classes such as American Idioms, American Film, Current Events and American Culture.* </p>
+				<p>Contact America! provides regular opportunities to meet with native English-speakers and listen to guest lecturers. Conversation is practiced using practical, real-world English.</p>
+				<p>*Exact courses offered at each location may vary.</p>
+				<br>
+				<h3 style="font-size:24px;"> SEMI-INTENSIVE ENGLISH</h3>
+				<p>For those who want to learn English while still having time to explore local cities and attractions and put their improving English into practice outside the classroom. </p>
+				<p>This program includes development of the important language skills that are needed to communicate accurately and effectively:</p>
+					<ul>
+						<li>Listening</li>
+						<li>Pronunciation </li>
+						<li>Speaking </li>
+						<li>Vocabulary</li>
+					</ul>
+				<p>Classes are held only in the mornings and build a foundation for communication competency. They include: </p>
+					<ul>
+						<li>Structure and Speaking Practice or Language Studies </li>
+						<li>Vocabulary Enrichment </li>
+						<li>One lesson in our Language Technology Center</li>
+					</ul>
+				<p> Contact America! provides you with regular opportunities to meet with native English speakers, listen to guest lecturers and participate in local excursions. </p>
+				<p>Conversation is practiced using practical, real-world English.</p>
+				<br>
+				<h3 style="font-size:24px;">AMERICAN EXPLORER</h3>
+				<p>For those who are planning a short vacation and would like to include some classes to improve their English speaking skills and enrich their vocabulary. </p>
+				<p>Mornings are dedicated to classes, and afternoons are free, allowing for local exploration and practicing English skills. </p>	
+				<p>This program includes development of the important language skills that are needed to communicate accurately and effectively: </p>
+				<ul>
+						<li>Listening</li>
+						<li>Speaking </li>
+						<li>Pronunciation </li>
+						<li>Vocabulary</li>
+					</ul>
+				<br>
+				<h3 style="font-size:24px;">ELS YOUTH & YOUNG ADULT PROGRAMS</h3>
+				<p>United States</p>
+				<p>Vacation study with ELS brings young people face-to-face with new cultures and points of view unlike any virtual experience. Meeting other young people from around the globe opens young minds, giving them fresh perspectives on the world around them. Acquiring strong English language skills gives them an advantage as they navigate that world in the future. </p>	
+				<ul>
+						<li>Youth Camps – for students ages 10 to 16 
+							<ul>
+								<li>Fun & Sun Camp</li>
+								<li>Malibu I & II Youth Camp</li>
+								<li>January Youth Homestay</li>
+							</ul>
+						</li>
+						<li>University Preparation Programs – for students ages 14 to 17</li>
+						<li>Summer in New York City Program – for young adults ages 16+</li>
+						<li>Nike Sports Camps – for students ages 9 to 17 </li>
+				</ul>
+				<p>Canada </p>
+				<ul>
+					<li>Summer and Winter Youth Programs – for students ages 9 to 17 </li>
+				</ul>
+				<p>Australia </p>
+				<ul>
+					<li>Junior Holiday English Programs – for students ages 13 to 17 </li>
+				</ul>
+				<p>Youth Camp Programs</p>
+				<p>These short-term all-inclusive packaged programs are designed specifically for the young learner, combining the best parts of the academic experience with those of the area’s social and cultural attractions. </p>
+				<p>All programs are: </p>
+					<ul>
+						<li>Fifteen 50-minute lessons per week, plus five 50-minute expansion activities centered on topics of interest to kids</li>
+						<li>Located on pristine, safe and secure university campuses </li>
+						<li>Taught by instructors who are certified and highly experienced with youths</li>
+						<li>Supervised 24 hours a day by carefully selected, attentive, caring and professional staff </li>
+						<li>Located right on campus with amenities such as the cafeteria, gym, pool and more</li>
+					</ul>
+				<p>University Preparation Programs – U.S.A.</p>
+				<p>ELS is pleased to offer our University Preparation Program on the prestigious campuses of Pepperdine University in scenic Malibu, California, and in Lawrenceville, New Jersey, at The Lawrenceville School, just outside of Princeton. These all-inclusive programs provide students ages 14 to 17 with practical English skills combined with learning about the U.S.A. university system through in-class subject matter and during tours of area universities.</p>
+				<br>
+				</div>
+		<br><br><br>
+		<footer>
+			<div id="copyright">
+				<div id="copy1">
+				<sup>&copy;</sup> Copyright 2017 ELS Educational Services, Inc., a <a id="link" href="">Berlitz Company</a>
+				</div>
+				<div id="copy2">
+					<a href="">Accreditation</a>
+					<a href="">Privacy Policy</a>
+					<a href="">Terms</a>
+				</div>
+			</div>
+		</footer>
+	</body>
+	
+</html>
+
+
+
